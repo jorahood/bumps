@@ -30,7 +30,7 @@ module Bumps
     end
     
     def use_server server
-      @config[:pull_url] = URI.join(server, 'features/content').to_s
+      @config[:pull_url] = URI('https://uisapp2.iu.edu/confluence-prd//createrssfeed.action?types=page&sort=modified&showContent=true&spaces=Sage&labelString=acceptancetest&rssType=atom&maxResults=1000&timeSpan=1000&publicFeed=true&title=Sage+Features+Automated+Acceptance+Tests&showDiff=false')
       @config[:push_url] = URI.join(server, 'features/results').to_s
     end
     
